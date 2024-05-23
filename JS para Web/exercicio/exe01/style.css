@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section {
+  text-align: center;
+}
+
+.barraDePlayer {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+}

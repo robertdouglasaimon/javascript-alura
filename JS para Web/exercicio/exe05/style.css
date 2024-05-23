@@ -1,0 +1,101 @@
+@charset "UTF-8"
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(41, 155, 248);
+    font: normal 15;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+
+/*--------------------------------------------------------*/
+.quadrado {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0px auto;   
+}
+
+.nomeDaCor {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0px auto;
+
+    color: green ;
+} 
+    
+.quadrado.vermelho {
+    background-color: red;
+}
+
+.quadrado.azul {
+    background-color: blue;
+}
+
+.quadrado.amarelo {
+    background-color: yellow;
+}
+
+.quadrado.verde {
+    background-color: green;
+}
+
+.nomeDaCor.vermelho {
+    color: red;
+}
+
+.nomeDaCor.azul {
+    color: blue;
+}
+
+.nomeDaCor.amarelo {
+    color: yellow;
+}
+
+.nomeDaCor.verde {
+    color: green;
+}
+    
+.botao {
+    display: flex;
+    margin: 0px auto; 
+}
+/*--------------------------------------------------------*/
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
