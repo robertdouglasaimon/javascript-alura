@@ -365,6 +365,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 4rem;
 }
 
+.app_section-task-list-item-active {
+    border: 2px solid #FFF; /* Ou qualquer outro estilo desejado */
+}
+
+.app__section-task-list-item-complete.app__section-task-list-item {
+    fill: #00F4BF;
+}
+
 .app__form-textarea,
 .app__form-textarea::placeholder {
     font-size: 2rem;

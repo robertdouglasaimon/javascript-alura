@@ -5,8 +5,11 @@ const formAdicionarTarefa = document.querySelector('.app__form-add-task');
 const areaDeTextoDoFormulario = document.querySelector('.app__form-textarea');
 const ulTarefas = document.querySelector('.app__section-task-list');
 const botaoCancelar = document.querySelector('.app__form-footer__button--cancel');
+const paragrafoDescricaoTarefa = document.querySelector('.app__section-active-task-description');
 
 const listaDeTarefas = JSON.parse(localStorage.getItem('listaDeTarefas')) || [];
+let tarefaSelecionada = null
+let liTarefaSelecionada = null
 
 function atualizarTarefas() {
     localStorage.setItem('listaDeTarefas', JSON.stringify(listaDeTarefas));
@@ -35,7 +38,7 @@ function criarElementoTarefa(tarefa) {
     botao.onclick = () => {
         // debugger
         const novaDescricao = prompt("Qual é o novo nome da tarefa?");
-        console.log('Nova descrição da tarefa: ', novaDescricao)
+        // console.log('Nova descrição da tarefa: ', novaDescricao)
         //If que eu fiz para verificar string vazia/espaço vazio <3
         if(novaDescricao == '' || novaDescricao == null) {
             alert('Valor inválido! Entre com valor válido e tente novamente!');
@@ -53,6 +56,25 @@ function criarElementoTarefa(tarefa) {
     li.append(svg)
     li.append(paragrafo)
     li.append(botao)
+    
+    
+    li.onclick = () => {
+        document.querySelectorAll('.app_section-task-list-item-active')
+            .forEach(elemento => {
+                elemento.classList.remove('app_section-task-list-item-active')
+            });
+        if(tarefaSelecionada == tarefa) {
+            paragrafoDescricaoTarefa.textContent = '';
+            tarefaSelecionada = null
+            liTarefaSelecionada = null
+            return
+        }
+        tarefaSelecionada = tarefa
+        liTarefaSelecionada = li
+        paragrafoDescricaoTarefa.textContent = tarefa.descricao
+
+        li.classList.add('app_section-task-list-item-active');
+    }
 
     return li
 }
@@ -84,4 +106,12 @@ listaDeTarefas.forEach(tarefa => {
 botaoCancelar.addEventListener('click', () => {
     areaDeTextoDoFormulario.value = '';
     formAdicionarTarefa.classList.add('hidden');
+});
+
+document.addEventListener('FocoFinalizado', () => {
+    if(tarefaSelecionada && liTarefaSelecionada) {
+        liTarefaSelecionada.classList.remove('app_section-task-list-item-active');
+        liTarefaSelecionada.classList.add('app__section-task-list-item-complete');
+        liTarefaSelecionada.querySelector('button').setAttribute('disabled', 'disabled');
+    }
 });

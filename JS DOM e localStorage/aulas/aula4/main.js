@@ -85,6 +85,14 @@ function alterarContexto(contexto) {
 const contagemRegressiva = () => {
     if (tempoDecorridoEmSegundo <= 0) {
         audioTempoFinalizado.play();
+        alert('Tempo finalizado!')
+
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco'
+        if(focoAtivo) {
+            const evento = new CustomEvent('FocoFinalizado')
+            document.dispatchEvent(evento)
+        }
+        
         zerar();
         somBeep.pause(); // Pausa o som beep
         return;
