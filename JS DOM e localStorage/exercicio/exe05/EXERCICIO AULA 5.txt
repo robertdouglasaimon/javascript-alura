@@ -1,0 +1,89 @@
+EXERCICIO 1
+
+Faça como eu fiz: deletando tarefas
+PRÓXIMA ATIVIDADE
+
+Você está se aproximando do final do projeto e antes de fazer o deploy, precisa ajustar seu projeto de acordo com o que fizemos em aula, e assim melhorar a experiência do usuário. Muitas vezes, ao utilizar um gerenciador de tarefas, os usuários desejam limpar tarefas que já foram concluídas ou até mesmo começar do zero, removendo todas as tarefas listadas. Vamos implementar essas funcionalidades!
+
+Instruções:
+Selecione os dois botões localizados no HTML:
+
+O botão para remover tarefas concluídas;
+O botão para remover todas as tarefas.
+Implemente a lógica no JavaScript:
+Crie uma função removerTarefas que receberá um parâmetro somenteCompletas. Esta função será responsável por remover tarefas baseando-se no parâmetro fornecido.
+Adicione event listeners para os dois novos botões, invocando a função removerTarefas com os parâmetros apropriados.
+Teste sua implementação:
+Marque algumas tarefas como concluídas e use o botão para removê-las.
+Tente remover todas as tarefas usando o botão apropriado.
+Dica:
+Lembre-se de atualizar o localStorage sempre que modificar a lista de tarefas.
+Considerações Finais:
+
+Após finalizar esta atividade, você estará um passo mais próximo de ter um aplicativo de gerenciamento de tarefas completo e pronto para ser lançado ao mundo! Essa é a etapa final antes de fazermos o deploy, então dedique-se, teste todas as funcionalidades e prepare-se para a próxima grande etapa: colocar seu projeto no ar!
+
+Lembre-se, cada detalhe e funcionalidade adicional que você incorpora em seu projeto não apenas enriquece sua aplicação, mas também demonstra seu comprometimento e atenção ao desenvolvimento do projeto. Boa sorte!
+
+
+EXERCICIO 2
+Um dos desafios que você enfrenta ao usar JavaScript para manipular o DOM é como selecionar os elementos que você quer modificar. Por exemplo, como você pode selecionar o elemento que contém o valor total do carrinho de compras? Como você pode selecionar todos os elementos que representam os produtos da lista? Como você pode selecionar o elemento que foi clicado pela pessoa usuária?
+
+Gif de uma cena do filme “Piratas do caribe”, onde dois piratas estão em alto mar olhando para o horizonte pelo telescópio
+
+Uma solução para esse problema é usar os seletores JavaScript, que são expressões que permitem identificar e selecionar elementos do DOM de forma simples e eficiente. Para usá-los, você pode utilizar os seguintes métodos do objeto document:
+
+document.querySelector(seletor): retorna o primeiro elemento do DOM que corresponde ao seletor especificado. Se nenhum elemento for encontrado, retorna null.
+Por exemplo: ao usar document.querySelector("#lista"), será retornado o primeiro elemento que possuir o id lista.
+document.querySelectorAll(seletor): retorna uma coleção (NodeList) de todos os elementos do DOM que correspondem ao seletor especificado. Se nenhum elemento for encontrado, retorna uma coleção vazia.
+Por exemplo: document.querySelectorAll(".texto-principal"), retorna todos os elementos com classe texto-principal.
+Mas o que são esses pontos e cerquilha antes do valor enviado como parâmetro desses métodos? Eles são valores baseados nos seletores CSS, como:
+
+Seletores de tipo: selecionam elementos pelo nome da tag HTML, como p, div, img, etc.
+Seletores de classe: selecionam elementos pelo valor do atributo class, usando o prefixo ”.” antes do nome da classe, como .produto, .carrinho, .botao, etc.
+Seletores de id: selecionam elementos pelo valor do atributo id, usando o prefixo ”#” antes do nome do id, como #total, #lista, #confirmacao, etc.
+Seletores de atributo: selecionam elementos pelo valor de qualquer atributo HTML, usando colchetes [ ] para delimitar o nome e o valor do atributo, como [href="https://www.bing.com"], [alt="Logo da loja"], [data-id="123"], etc.
+Seletores combinados: selecionam elementos que atendem a mais de um critério, usando combinadores como espaço (descendente), > (filho direto), + (irmão adjacente), ~ (irmão geral), etc. Por exemplo, .produto > img seleciona todas as imagens que são filhas diretas de elementos com a classe produto.
+E não paramos por aí!
+
+Também temos outros métodos do JavaScript que servem para selecionar elementos, mas que são mais específicos no que podem receber como parâmetros. São eles:
+
+getElementById(id): é fornecido por este método um elemento do DOM que tem o valor do atributo id igual ao parâmetro passado.
+Por exemplo, document.getElementById("total") retorna o elemento que tem id="total". Esse método é útil para selecionar elementos únicos, pois o valor do id deve ser exclusivo na página.
+getElementsByTagName(tag): este método retorna uma coleção (HTMLCollection) de elementos do DOM que têm o nome da tag HTML igual ao parâmetro passado.
+Por exemplo, document.getElementsByTagName("p") retorna todos os elementos <p> da página. Este método é útil para selecionar elementos por tipo, como parágrafos, imagens, links, etc.
+getElementsByClassName(classe): este método retorna uma coleção (HTMLCollection) de elementos do DOM que têm o valor do atributo class igual ao parâmetro passado.
+Por exemplo, document.getElementsByClassName("produto") retorna todos os elementos que têm class="produto". Esse método é útil para selecionar elementos por classe, que é um atributo que pode ser usado para definir o estilo ou a funcionalidade dos elementos.
+elementFromPoint(coordenada x, coordenada y): este método retorna o elemento do DOM que está localizado nas coordenadas x e y especificadas na janela de visualização.
+Por exemplo, document.elementFromPoint(100, 200) retorna o elemento que está na posição 100 pixels da esquerda e 200 pixels do topo da janela. Este método é útil para selecionar elementos com base na sua posição na tela.
+elementsFromPoint(coordenada x, coordenada y): este método retorna uma coleção (Array) de elementos do DOM que estão localizados nas coordenadas x e y especificadas na janela de visualização, ordenados do mais próximo ao mais distante da superfície da tela.
+Por exemplo, document.elementsFromPoint(100, 200) retorna um array de elementos que estão na posição 100 pixels da esquerda e 200 pixels do topo da janela, incluindo os elementos que estão sobrepostos ou aninhados. Este método é útil para selecionar todos os elementos que estão em uma determinada posição na tela.
+No entanto, os seletores JavaScript também têm algumas limitações. Algumas delas são:
+
+Eles são sensíveis a maiúsculas e minúsculas, ou seja, eles diferenciam letras maiúsculas e minúsculas. Por exemplo, ”.Produto” não é o mesmo que ”.produto”.
+Não podem usar pseudo-elementos ou pseudo-classes CSS, como ::before, ::after, :hover, :checked, etc. Esses elementos e classes são usados para definir o estilo dos elementos HTML, mas não fazem parte do DOM.
+Podem ter um impacto negativo na performance da página web, especialmente se forem usados de forma excessiva ou inadequada. Por exemplo, usar seletores muito complexos ou aninhados pode aumentar o tempo de busca dos elementos no DOM.
+Portanto, é importante que você use com cuidado e critério, seguindo as boas práticas de desenvolvimento web. Algumas dicas para isso são:
+
+Use seletores simples e específicos, que identifiquem claramente os elementos que você quer selecionar.
+Use seletores de id sempre que possível, pois eles são os mais rápidos e únicos.
+Evite usar seletores universais (*) ou que dependam da ordem dos elementos no DOM, pois eles podem ser lentos ou imprecisos.
+Cache os elementos selecionados em variáveis, para evitar buscar os mesmos elementos repetidamente no DOM.
+
+
+EXERCICIO 2
+
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Persistindo o estado de tarefas completas
+Você está desenvolvendo uma aplicação de lista de tarefas e implementou uma funcionalidade em que os usuários podem marcar tarefas como completas. No entanto, ao recarregar a página, todas as tarefas voltam ao estado inicial, perdendo a informação de que foram completadas. Sua missão é ajustar o código para que o estado de cada tarefa seja salvo no localStorage, permitindo que a aplicação mantenha o estado das tarefas após o recarregamento da página.
+
+2) Criando uma visualização dinâmica de tarefas
+Em um projeto de gerenciamento de tarefas, você percebeu a necessidade de melhorar a interação do usuário com a lista de tarefas. Sua missão é: implemente uma função que, ao carregar a página, verifica no localStorage quais tarefas foram marcadas como completas e atualiza a classe CSS dessas tarefas para refletir seu estado correto. Isso inclui desabilitar o botão de edição das tarefas completas para evitar modificações.
+
+3) Remoção completa de tarefas
+Implemente a funcionalidade para um botão "Limpar todas as tarefas" em sua aplicação de lista de tarefas. Esse botão deve ser capaz de remover todas as tarefas, concluídas ou não, da interface do usuário e limpar completamente o localStorage associado às tarefas, resultando em uma lista de tarefas vazia quando a página for recarregada.
+
+Bom trabalho!
