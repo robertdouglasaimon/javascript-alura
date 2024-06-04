@@ -1,0 +1,34 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+O que é:
+Boas-vindas à nossa lista de exercícios , um caminho prático e envolvente para aprender e aprimorar suas habilidades em tecnologia. Aqui, você não encontrará longas leituras teóricas ou explicações abstratas. Em vez disso, nossos exercícios são projetados para colocar você no centro do processo de aprendizado, permitindo que você construa, experimente e explore conceitos tecnológicos de forma direta e aplicada.
+
+Para que serve:
+Esta lista é uma ferramenta dinâmica para aprender, reforçar e aprimorar habilidades práticas em programação e desenvolvimento web. Cada exercício é uma oportunidade de aplicar conhecimentos teóricos em cenários reais, preparando você não apenas para entender a tecnologia, mas para utilizá-la de maneira eficaz e criativa em seus próprios projetos ou no ambiente de trabalho.
+
+Como fazer:
+Leia cada exercício com atenção: comece entendendo o cenário proposto e o que se espera como resultado.
+Escreva o código: utilize o ambiente de codificação de sua escolha para escrever e testar o seu código. Não se preocupe em acertar de primeira, a prática leva à perfeição.
+Verifique o gabarito: após tentar resolver o exercício, compare seu código com o gabarito fornecido em “Opinião do instrutor”. Isso ajudará a identificar áreas de melhoria e consolidar o aprendizado.
+Repita: a repetição é chave para o aprendizado. Tente fazer os exercícios mais de uma vez, aplicando melhorias e variantes.
+Lembre-se, cada desafio é uma chance de crescer. Não se desanime com os erros; eles são degraus no caminho do aprendizado. E acima de tudo, divirta-se! O aprendizado mais eficaz acontece quando nos engajamos e nos interessamos pelo que estamos fazendo. Não se esqueça que estamos no Fórum e no Discord para te ajudar!
+
+Bons estudos!
+
+1) Alternando visibilidade do formulário
+Imagine que você está desenvolvendo uma aplicação web similar ao Fokus, chamada "TaskFlow", que também possui uma funcionalidade de lista de tarefas.
+
+Sua tarefa é implementar a funcionalidade de alternar a visibilidade do formulário de adicionar tarefas. Quando o usuário clica no botão "Adicionar Tarefa", o formulário, que inicialmente está escondido, deve ser exibido. Se o usuário clicar novamente no botão enquanto o formulário estiver visível, este deve ser escondido.
+
+Para isso, você precisará monitorar o evento de clique no botão "Adicionar Tarefa" e alternar a classe hidden no formulário de adição de tarefa. O botão "Adicionar Tarefa" tem a classe .btn-add-task e o formulário tem a classe .form-add-task. Utilize o JavaScript para adicionar a lógica necessária.
+
+2) Criação de uma lista de tarefas interativa
+Você está desenvolvendo uma aplicação web chamada "Task Flow" para gerenciamento de tarefas. Você deseja permitir que os usuários adicionem novas tarefas por meio de um formulário, utilizando um textarea para a descrição da tarefa. Sua tarefa é implementar a funcionalidade de adicionar tarefas à lista e garantir que essas tarefas sejam salvas no localStorage, de modo que elas persistam mesmo após o navegador ser recarregado.
+
+Siga as instruções para completar este exercício:
+
+Adicione um ouvinte de evento submit ao formulário de adição de tarefas. Quando o formulário for submetido, impeça o comportamento padrão de recarga da página;
+Recupere o valor digitado no textarea e crie um objeto de tarefa com esse valor;
+Adicione a nova tarefa a uma lista de tarefas e salve essa lista no localStorage;
+Considere que já existe um textarea com a classe app__form-textarea e um formulário no seu HTML.

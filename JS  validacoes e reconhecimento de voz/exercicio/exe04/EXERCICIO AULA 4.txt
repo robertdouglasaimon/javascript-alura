@@ -1,0 +1,59 @@
+Faça como eu fiz: eventos customizados
+EXERCICIO 1
+
+Agora que você já tem uma base sólida sobre como adicionar tarefas à nossa aplicação, vamos praticar aprimorando a experiência do usuário, permitindo que ele selecione uma tarefa específica e, posteriormente, marque-a como concluída.
+
+Objetivos:
+
+Adicionar a capacidade de selecionar uma tarefa específica.
+Implementar uma função que marca a tarefa selecionada como concluída.
+Melhorar a usabilidade e feedback visual.
+Instruções:
+
+Seleção de Tarefa:
+
+Adicione uma variável paragrafoDescricaoTarefa para selecionar o parágrafo onde a descrição da tarefa ativa será mostrada.
+Crie duas variáveis, tarefaSelecionada e liTarefaSelecionada, para manter um registro da tarefa atualmente selecionada.
+Dentro da função criarElementoTarefa, adicione um evento de clique ao elemento li.
+Esse evento deve:
+
+Remover a classe de tarefa ativa de todas as tarefas.
+Se a tarefa atualmente selecionada for clicada novamente, desmarque-a e limpe o conteúdo do paragrafoDescricaoTarefa.
+Se uma nova tarefa for selecionada, atualize as variáveis tarefaSelecionada e liTarefaSelecionada e adicione a classe de tarefa ativa.
+Finalização de Tarefa:
+
+Escute o evento FocoFinalizado em todo o documento. Quando esse evento for acionado:
+
+Verifique se existe uma tarefa selecionada;
+Marque essa tarefa como concluída, alterando sua classe para app__section-task-list-item-complete;
+Desabilite o botão de edição para essa tarefa.
+Dicas:
+
+Lembre-se de usar document.querySelector e document.querySelectorAll para selecionar elementos.
+Utilize classList.add, classList.remove e setAttribute para manipular classes e atributos de elementos.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+EXERCICIO 2
+PRÓXIMA ATIVIDADE
+
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Alternando entre tarefas ativas
+Desenvolva um recurso para um aplicativo de gerenciamento de projetos chamado "ProjetoFoco" com as seguintes regras:
+
+Ao clicar em uma tarefa, ela é destacada como ativa e sua descrição é mostrada em um local específico da interface;
+Se a mesma tarefa for clicada novamente, a seleção deve ser removida;
+Apenas uma tarefa pode ser destacada como ativa por vez.
+2) Escutando e reagindo ao evento de foco finalizado
+No seu projeto "GerenciadorFoco", que possui um sistema de cronômetro para gerenciamento de tarefas, adicione a lógica para escutar o evento customizado FocoFinalizado, disparado quando o tempo de foco em uma tarefa chega ao fim. Utilize esse evento para atualizar a interface do usuário ou realizar outras ações que indiquem a conclusão da tarefa de foco.
+
+3) Marcação automática de tarefa concluída
+Suponha que você tenha um sistema de gestão de tarefas e deseja automatizar o processo de marcação de tarefas como concluídas quando um evento específico ocorre. Nesse cenário, implemente a lógica para identificar quando o evento FocoFinalizado é disparado e, em seguida, marcar a tarefa selecionada como concluída. Siga os passos abaixo para realizar essa implementação:
+
+Verifique se há uma tarefa selecionada;
+Se houver uma tarefa selecionada, atualize a interface do usuário para refletir que a tarefa foi concluída, desabilitando-a para edição e destacando-a visualmente como concluída.
+Bom trabalho!

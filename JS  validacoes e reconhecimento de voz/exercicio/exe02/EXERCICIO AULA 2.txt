@@ -1,0 +1,9 @@
+Vamos praticar o que aprendemos até aqui?
+
+1) Estilizando elementos dinâmicos
+Você está trabalhando em um projeto web e percebe que os novos elementos adicionados à lista de tarefas — especificamente os parágrafos e botões — não estão recebendo os estilos definidos, pois as classes CSS correspondentes não estão sendo aplicadas a eles. Seu desafio é: modifique o script JavaScript para adicionar as classes app__section-task-list-item-description aos parágrafos e app_button-edit aos botões quando novos itens da lista de tarefas são criados. Essas classes devem ser aplicadas de forma que os elementos recém-criados tenham a aparência conforme o design no Figma.
+
+2) Ajustando a visualização de tarefas
+Você percebeu que, embora a funcionalidade de adicionar tarefas esteja funcionando perfeitamente, a visualização das tarefas salvas ao recarregar a página não está como deveria. As tarefas salvas no localStorage precisam ser exibidas na lista de tarefas assim que a página é carregada. Implemente o código necessário para ler as tarefas do localStorage, criar os elementos de tarefa correspondentes e adicioná-los à lista de tarefas na inicialização da página.
+
+Bom trabalho!
