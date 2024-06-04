@@ -16,19 +16,39 @@ Lembre-se, cada desafio é uma chance de crescer. Não se desanime com os erros;
 
 Bons estudos!
 
-1) Alternando visibilidade do formulário
-Imagine que você está desenvolvendo uma aplicação web similar ao Fokus, chamada "TaskFlow", que também possui uma funcionalidade de lista de tarefas.
+1) Estruturando a página do jogo
+Imagine que você é responsável por desenvolver um jogo de adivinhação interativo chamado "Descubra o Código". Neste jogo, o usuário deve adivinhar um número secreto gerado aleatoriamente pelo computador que está entre 1 e 100. Utilize HTML para estruturar a página que vai incluir:
 
-Sua tarefa é implementar a funcionalidade de alternar a visibilidade do formulário de adicionar tarefas. Quando o usuário clica no botão "Adicionar Tarefa", o formulário, que inicialmente está escondido, deve ser exibido. Se o usuário clicar novamente no botão enquanto o formulário estiver visível, este deve ser escondido.
+Um título que anuncie o jogo;
+Uma área para exibir dicas ao usuário (como "O número secreto é maior" ou "O número secreto é menor"); e
+Um local para mostrar o palpite do usuário;
+Um botão para iniciar a adivinhação através de um input de texto onde o usuário pode digitar seu palpite.
+2) Estilizando com CSS
+Após estruturar sua página do “Descubra o Código”, use CSS para melhorar a aparência do jogo, seguindo as instruções:
 
-Para isso, você precisará monitorar o evento de clique no botão "Adicionar Tarefa" e alternar a classe hidden no formulário de adição de tarefa. O botão "Adicionar Tarefa" tem a classe .btn-add-task e o formulário tem a classe .form-add-task. Utilize o JavaScript para adicionar a lógica necessária.
+Aplique estilos para tornar a interface mais agradável e fácil de usar;
+Considere usar cores vibrantes para o botão de submit e o input de texto;
+Defina estilos para as mensagens de dica, tornando-as visualmente distintas dependendo se o palpite do usuário está muito alto ou muito baixo;
+Experimente com bordas, sombras e fontes para criar um visual mais interessante.
+3) Escolhendo e aplicando uma fonte personalizada
+Imagine que você está desenvolvendo um site para um novo projeto, e chegou a hora de dar um toque especial na aparência do site, começando pela tipografia. Você deseja que o site tenha uma identidade visual única - moderna e atraente para um público jovem. Assim, você decide utilizar o Google Fonts para escolher uma fonte que se alinhe com a visão do projeto. Sua tarefa é:
 
-2) Criação de uma lista de tarefas interativa
-Você está desenvolvendo uma aplicação web chamada "Task Flow" para gerenciamento de tarefas. Você deseja permitir que os usuários adicionem novas tarefas por meio de um formulário, utilizando um textarea para a descrição da tarefa. Sua tarefa é implementar a funcionalidade de adicionar tarefas à lista e garantir que essas tarefas sejam salvas no localStorage, de modo que elas persistam mesmo após o navegador ser recarregado.
+Acesse o site do Google Fonts;
+Escolha uma fonte que você acredite que se encaixe perfeitamente com o estilo do seu projeto;
+Importe essa fonte no seu arquivo CSS utilizando a diretiva @import;
+Aplique essa fonte em todo o corpo do seu site.
+4) Personalizando cores com variáveis CSS
+Após definir a fonte, você percebe que a paleta de cores do seu projeto também precisa de uma atualização para complementar a nova tipografia. Você espera que o site transmita uma sensação acolhedora e moderna, portanto, decide definir uma cor primária e uma cor de fundo, utilizando variáveis CSS para facilitar futuras alterações no design. Sua tarefa é:
 
-Siga as instruções para completar este exercício:
+Escolha uma paleta de cores no Color Hunt que você acha que combina com o seu projeto;
+Defina duas variáveis CSS no seletor :root: uma para a cor primária (--primary-color) e outra para a cor de fundo (--bg-color);
+Aplique a cor primária em todos os textos e a cor de fundo no corpo do site.
+5) Personalizando a interface do jogo com CSS Flexbox
+Você está trabalhando no desenvolvimento de um jogo interativo para a web e chegou o momento de estilizar a página para que ela tenha uma aparência mais profissional e atrativa. Você já definiu as cores e a fonte a serem utilizadas no projeto e agora precisa aplicar esses recursos de forma eficaz no layout da página. Sua tarefa é:
 
-Adicione um ouvinte de evento submit ao formulário de adição de tarefas. Quando o formulário for submetido, impeça o comportamento padrão de recarga da página;
-Recupere o valor digitado no textarea e crie um objeto de tarefa com esse valor;
-Adicione a nova tarefa a uma lista de tarefas e salve essa lista no localStorage;
-Considere que já existe um textarea com a classe app__form-textarea e um formulário no seu HTML.
+Utilize a propriedade CSS display: flex para centralizar os elementos na página;
+Aplique min-height: 100vh à tag body para garantir que o conteúdo ocupe no mínimo a altura total da viewport;
+Use flex-direction: column, align-items: center, e justify-content: center para organizar os elementos verticalmente no centro da tela;
+Defina text-align: center e margin: 0 para garantir que o texto esteja sempre centralizado e sem margens padrão;
+Aplique a fonte personalizada escolhida utilizando a variável CSS --font-family.
+Bom trabalho!
