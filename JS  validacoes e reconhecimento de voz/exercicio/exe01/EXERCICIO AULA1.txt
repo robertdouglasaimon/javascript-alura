@@ -1,54 +1,17 @@
-Lista de exercícios
-PRÓXIMA ATIVIDADE
+Vamos praticar o que aprendemos até aqui?
 
-O que é:
-Boas-vindas à nossa lista de exercícios , um caminho prático e envolvente para aprender e aprimorar suas habilidades em tecnologia. Aqui, você não encontrará longas leituras teóricas ou explicações abstratas. Em vez disso, nossos exercícios são projetados para colocar você no centro do processo de aprendizado, permitindo que você construa, experimente e explore conceitos tecnológicos de forma direta e aplicada.
+1) Criando e integrando módulos JavaScript
+Imagine que você está desenvolvendo um jogo de adivinhação online, em que os jogadores precisam adivinhar um número secreto gerado aleatoriamente. Para organizar o projeto e facilitar sua manutenção, você escolhe dividir o código JavaScript em módulos separados. Sua tarefa é: crie um módulo chamado sortearNumero.js, responsável por gerar e exibir um número secreto aleatório. Além disso, você deve integrar este módulo ao seu projeto HTML principal. Siga as instruções:
 
-Para que serve:
-Esta lista é uma ferramenta dinâmica para aprender, reforçar e aprimorar habilidades práticas em programação e desenvolvimento web. Cada exercício é uma oportunidade de aplicar conhecimentos teóricos em cenários reais, preparando você não apenas para entender a tecnologia, mas para utilizá-la de maneira eficaz e criativa em seus próprios projetos ou no ambiente de trabalho.
+Crie uma pasta chamada “app” no seu projeto para armazenar todos os arquivos JavaScript;
+Dentro da pasta “app”, crie um arquivo chamado sortearNumero.js;
+No arquivo sortearNumero.js, escreva uma função que gera um número aleatório entre 0 e 99 e exiba esse número no console usando o console.log;
+Integre o módulo sortearNumero.js ao seu arquivo HTML principal (index.html), adicionando a tag <script src="app/sortearNumero.js"></script> na parte inferior do body;
+Teste o seu projeto, abrindo o arquivo index.html no navegador e verifique se o número aleatório é exibido no console ao recarregar a página.
+2) Criando um sorteio de números aleatórios
+Continuando o projeto do jogo, uma parte essencial é o sorteio de um número secreto, que deve ser completamente aleatório para garantir a imparcialidade. Sua tarefa é: implemente essa funcionalidade utilizando JavaScript. Siga as instruções:
 
-Como fazer:
-Leia cada exercício com atenção: comece entendendo o cenário proposto e o que se espera como resultado.
-Escreva o código: utilize o ambiente de codificação de sua escolha para escrever e testar o seu código. Não se preocupe em acertar de primeira, a prática leva à perfeição.
-Verifique o gabarito: após tentar resolver o exercício, compare seu código com o gabarito fornecido em “Opinião do instrutor”. Isso ajudará a identificar áreas de melhoria e consolidar o aprendizado.
-Repita: a repetição é chave para o aprendizado. Tente fazer os exercícios mais de uma vez, aplicando melhorias e variantes.
-Lembre-se, cada desafio é uma chance de crescer. Não se desanime com os erros; eles são degraus no caminho do aprendizado. E acima de tudo, divirta-se! O aprendizado mais eficaz acontece quando nos engajamos e nos interessamos pelo que estamos fazendo. Não se esqueça que estamos no Fórum e no Discord para te ajudar!
-
-Bons estudos!
-
-1) Estruturando a página do jogo
-Imagine que você é responsável por desenvolver um jogo de adivinhação interativo chamado "Descubra o Código". Neste jogo, o usuário deve adivinhar um número secreto gerado aleatoriamente pelo computador que está entre 1 e 100. Utilize HTML para estruturar a página que vai incluir:
-
-Um título que anuncie o jogo;
-Uma área para exibir dicas ao usuário (como "O número secreto é maior" ou "O número secreto é menor"); e
-Um local para mostrar o palpite do usuário;
-Um botão para iniciar a adivinhação através de um input de texto onde o usuário pode digitar seu palpite.
-2) Estilizando com CSS
-Após estruturar sua página do “Descubra o Código”, use CSS para melhorar a aparência do jogo, seguindo as instruções:
-
-Aplique estilos para tornar a interface mais agradável e fácil de usar;
-Considere usar cores vibrantes para o botão de submit e o input de texto;
-Defina estilos para as mensagens de dica, tornando-as visualmente distintas dependendo se o palpite do usuário está muito alto ou muito baixo;
-Experimente com bordas, sombras e fontes para criar um visual mais interessante.
-3) Escolhendo e aplicando uma fonte personalizada
-Imagine que você está desenvolvendo um site para um novo projeto, e chegou a hora de dar um toque especial na aparência do site, começando pela tipografia. Você deseja que o site tenha uma identidade visual única - moderna e atraente para um público jovem. Assim, você decide utilizar o Google Fonts para escolher uma fonte que se alinhe com a visão do projeto. Sua tarefa é:
-
-Acesse o site do Google Fonts;
-Escolha uma fonte que você acredite que se encaixe perfeitamente com o estilo do seu projeto;
-Importe essa fonte no seu arquivo CSS utilizando a diretiva @import;
-Aplique essa fonte em todo o corpo do seu site.
-4) Personalizando cores com variáveis CSS
-Após definir a fonte, você percebe que a paleta de cores do seu projeto também precisa de uma atualização para complementar a nova tipografia. Você espera que o site transmita uma sensação acolhedora e moderna, portanto, decide definir uma cor primária e uma cor de fundo, utilizando variáveis CSS para facilitar futuras alterações no design. Sua tarefa é:
-
-Escolha uma paleta de cores no Color Hunt que você acha que combina com o seu projeto;
-Defina duas variáveis CSS no seletor :root: uma para a cor primária (--primary-color) e outra para a cor de fundo (--bg-color);
-Aplique a cor primária em todos os textos e a cor de fundo no corpo do site.
-5) Personalizando a interface do jogo com CSS Flexbox
-Você está trabalhando no desenvolvimento de um jogo interativo para a web e chegou o momento de estilizar a página para que ela tenha uma aparência mais profissional e atrativa. Você já definiu as cores e a fonte a serem utilizadas no projeto e agora precisa aplicar esses recursos de forma eficaz no layout da página. Sua tarefa é:
-
-Utilize a propriedade CSS display: flex para centralizar os elementos na página;
-Aplique min-height: 100vh à tag body para garantir que o conteúdo ocupe no mínimo a altura total da viewport;
-Use flex-direction: column, align-items: center, e justify-content: center para organizar os elementos verticalmente no centro da tela;
-Defina text-align: center e margin: 0 para garantir que o texto esteja sempre centralizado e sem margens padrão;
-Aplique a fonte personalizada escolhida utilizando a variável CSS --font-family.
+Crie um arquivo chamado sortearNumero.js;
+Dentro do arquivo criado, escreva uma função que sorteia um número aleatório entre 0 e 100, inclusive;
+Mostre esse número no console com a mensagem "Número Secreto: [número]". Lembre-se de incluir este script no seu arquivo index.html para testar o resultado.
 Bom trabalho!
