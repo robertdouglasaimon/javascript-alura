@@ -1,29 +1,3 @@
-const elementoChute = document.querySelector('#chute');
-
-window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-const recognition = new SpeechRecognition();
-recognition.lang = 'pt-Br'
-recognition.start()
-
-recognition.addEventListener('result', microLigado);
-
-function microLigado(e) {
-    chute = e.results [0][0].transcript
-    exibeChuteNaTela(chute)
-    verificaSeOChutePossuiUmValorValido(chute)
-}
-
-function exibeChuteNaTela(chute) {
-    elementoChute.innerHTML = `
-    <div>Você disse</div>
-    <span class="box">${chute}</span>    
-    `
-}
-
-
-
-
 /*-----------VALIDAÇÃO DA CONDIÇÃO-----------------------------------*/
 
 function verificaSeOChutePossuiUmValorValido(chute) {
@@ -31,17 +5,29 @@ function verificaSeOChutePossuiUmValorValido(chute) {
 
     if(chuteForInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido</div>'
+        return
     }
 
     if (numeroForMaiorOuMenorQueOValorPermitido(numero)) {
        elementoChute.innerHTML += `<div>Valor Inválido: O numero secreto precisa estar entre ${menorValor} e ${maiorValor}.</div>`
+
+       return
     }
 
     if(numero === numeroSecreto) {
        document.body.innerHTML = `
        <h2>Você acertou!</h2>
        <h3>O número secreto era ${numeroSecreto}</h3>
+
+       <button id="jogar-novamente" class="btn-jogar">Jogar Novamente?</button>
        `;
+    } else if (numero > numeroSecreto) {
+        elementoChute.innerHTML += `    
+        <div>O número secreto é menor <i class="fa-solid fa-arrow-down"></i></div>
+        `
+    } else {
+        elementoChute.innerHTML +=
+        `<div>O número secreto é maior <i class="fa-solid fa-arrow-up"></i></div>`
     }
 
 }
@@ -53,3 +39,9 @@ function chuteForInvalido(numero) {
 function numeroForMaiorOuMenorQueOValorPermitido(numero) {
     return numero > maiorValor || numero < menorValor
 }
+
+document.body.addEventListener('click', e => {
+    if(e.target.id == 'jogar-novamente') {
+        window.location.reload();
+    }
+});

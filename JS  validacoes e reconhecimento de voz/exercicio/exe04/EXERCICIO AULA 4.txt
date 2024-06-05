@@ -1,59 +1,15 @@
-Faça como eu fiz: eventos customizados
-EXERCICIO 1
-
-Agora que você já tem uma base sólida sobre como adicionar tarefas à nossa aplicação, vamos praticar aprimorando a experiência do usuário, permitindo que ele selecione uma tarefa específica e, posteriormente, marque-a como concluída.
-
-Objetivos:
-
-Adicionar a capacidade de selecionar uma tarefa específica.
-Implementar uma função que marca a tarefa selecionada como concluída.
-Melhorar a usabilidade e feedback visual.
-Instruções:
-
-Seleção de Tarefa:
-
-Adicione uma variável paragrafoDescricaoTarefa para selecionar o parágrafo onde a descrição da tarefa ativa será mostrada.
-Crie duas variáveis, tarefaSelecionada e liTarefaSelecionada, para manter um registro da tarefa atualmente selecionada.
-Dentro da função criarElementoTarefa, adicione um evento de clique ao elemento li.
-Esse evento deve:
-
-Remover a classe de tarefa ativa de todas as tarefas.
-Se a tarefa atualmente selecionada for clicada novamente, desmarque-a e limpe o conteúdo do paragrafoDescricaoTarefa.
-Se uma nova tarefa for selecionada, atualize as variáveis tarefaSelecionada e liTarefaSelecionada e adicione a classe de tarefa ativa.
-Finalização de Tarefa:
-
-Escute o evento FocoFinalizado em todo o documento. Quando esse evento for acionado:
-
-Verifique se existe uma tarefa selecionada;
-Marque essa tarefa como concluída, alterando sua classe para app__section-task-list-item-complete;
-Desabilite o botão de edição para essa tarefa.
-Dicas:
-
-Lembre-se de usar document.querySelector e document.querySelectorAll para selecionar elementos.
-Utilize classList.add, classList.remove e setAttribute para manipular classes e atributos de elementos.
-
-----------------------------------------------------------------------------------------------------------------------------
-
-EXERCICIO 2
-PRÓXIMA ATIVIDADE
-
 Lista de exercícios
 PRÓXIMA ATIVIDADE
 
 Vamos praticar o que aprendemos até aqui?
 
-1) Alternando entre tarefas ativas
-Desenvolva um recurso para um aplicativo de gerenciamento de projetos chamado "ProjetoFoco" com as seguintes regras:
+1) Validando o chute no jogo de adivinhação
+Desenvolva uma funcionalidade que valide o chute dado pelo jogador em um jogo de adivinhação. O chute deve ser um número inteiro dentro de um intervalo especificado, por exemplo, entre 1 e 1000. Crie um arquivo chamado validacao.js e implemente a função verificaSeOChutePossuiUmValorValido(chute). Essa função deve verificar se o chute é um número válido e, se não for, exibir uma mensagem de erro no console do navegador, indicando que o valor é inválido.
 
-Ao clicar em uma tarefa, ela é destacada como ativa e sua descrição é mostrada em um local específico da interface;
-Se a mesma tarefa for clicada novamente, a seleção deve ser removida;
-Apenas uma tarefa pode ser destacada como ativa por vez.
-2) Escutando e reagindo ao evento de foco finalizado
-No seu projeto "GerenciadorFoco", que possui um sistema de cronômetro para gerenciamento de tarefas, adicione a lógica para escutar o evento customizado FocoFinalizado, disparado quando o tempo de foco em uma tarefa chega ao fim. Utilize esse evento para atualizar a interface do usuário ou realizar outras ações que indiquem a conclusão da tarefa de foco.
+2) Exibindo feedback do chute diretamente na tela
+Aprimore a interação do seu jogo de adivinhação, permitindo que, após um chute ser feito utilizando o reconhecimento de voz, além de exibir o número dito, uma mensagem de feedback seja mostrada diretamente na interface do usuário. Essa mensagem deve indicar se o valor falado é válido ou não. Se o valor não for um número ou estiver fora do intervalo aceitável (por exemplo, 1 a 1000), mostre uma mensagem de erro como "Valor inválido: Fale um número entre 1 e 1000". Implemente essa funcionalidade modificando o arquivo reconhecimentoDeVoz.js para adicionar a mensagem de erro diretamente no HTML, abaixo do número falado.
 
-3) Marcação automática de tarefa concluída
-Suponha que você tenha um sistema de gestão de tarefas e deseja automatizar o processo de marcação de tarefas como concluídas quando um evento específico ocorre. Nesse cenário, implemente a lógica para identificar quando o evento FocoFinalizado é disparado e, em seguida, marcar a tarefa selecionada como concluída. Siga os passos abaixo para realizar essa implementação:
+3) Descobrindo o número secreto
+Para tornar o jogo de adivinhação mais envolvente, você decide implementar feedbacks visuais com base no palpite do usuário: se o palpite for muito alto ou muito baixo em relação ao número secreto, o jogo deve indicar isso visualmente. Além disso, se o palpite for inválido (por exemplo, uma palavra ou um número fora do intervalo permitido), o jogo deve mostrar uma mensagem de "Valor inválido". Sua tarefa é criar uma função em JavaScript que realize essas verificações e atualize a interface do usuário (UI) de acordo com o palpite dado.
 
-Verifique se há uma tarefa selecionada;
-Se houver uma tarefa selecionada, atualize a interface do usuário para refletir que a tarefa foi concluída, desabilitando-a para edição e destacando-a visualmente como concluída.
 Bom trabalho!
