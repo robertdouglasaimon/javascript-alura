@@ -1,29 +1,19 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
 Vamos praticar o que aprendemos até aqui?
 
-1) Implementação da Edição de Tarefas
-Vamos continuar praticando com o projeto Task Flow, uma aplicação de lista de tarefas!
+1) Integrando reconhecimento de voz ao seu projeto
+Você está desenvolvendo um jogo de adivinhação e decidiu torná-lo mais interativo, permitindo que os usuários possam falar os palpites em vez de digitá-los. Utilize a Web Speech API para adicionar reconhecimento de voz ao seu projeto. Siga as instruções a seguir para fazer o exercício:
 
-Crie uma funcionalidade que permita ao usuário editar a descrição de uma tarefa existente através de um prompt, assim como descrito, mas com a adição de atualizar essa informação no localStorage. Isso garante que as alterações feitas pelo usuário permaneçam salvas mesmo após o recarregamento da página. Para isso, você precisará identificar qual tarefa foi editada e atualizar apenas essa tarefa no array de tarefas salvo no localStorage.
+Crie um novo arquivo chamado reconhecimentoDeVoz.js. Neste arquivo, configure o reconhecimento de voz para ser ativado assim que a aplicação for carregada, e ajuste-o para reconhecer a língua portuguesa;
+Teste se o reconhecimento de voz está funcionando, verificando se o microfone do navegador é ativado ao recarregar a página.
+2) Exibindo a fala reconhecida no console
+Agora que o microfone pode ser ativado, o próximo passo é capturar o que é falado e exibir essa informação.
 
-2) Identificando e corrigindo bugs no JavaScript
-Durante os testes da aplicação de lista de tarefas, você percebe que, ao tentar atualizar a descrição de uma tarefa, algumas vezes a atualização não é realizada corretamente. Sua missão é identificar o problema e corrigi-lo utilizando técnicas de debugging. Siga as instruções a seguir:
+Modifique o arquivo reconhecimentoDeVoz.js para que, além de iniciar o reconhecimento de voz, ele também possa capturar a fala do usuário e exibi-la no console;
+Implemente um evento que seja disparado toda vez que o usuário falar algo, capturando essa fala e exibindo-a no console como "Você disse: [frase]". Isso permitirá que você veja em tempo real o que o programa está reconhecendo.
+3) Exibindo chutes na interface do usuário
+No jogo de adivinhação, desenvolva uma funcionalidade que permite aos jogadores fazerem chutes, usando a voz. Quando um jogador fala um número, esse número deve ser capturado pelo sistema e exibido na interface do jogo, especificamente em uma área designada para mostrar o chute do jogador. Para fazer isso, utilize o reconhecimento de voz para capturar o chute e o JavaScript para atualizar o conteúdo de uma div com o ID "chute", exibindo o texto "Você disse: [número]" junto com o número falado.
 
-Adicione um comando debugger antes da captura da nova descrição da tarefa para analisar o comportamento do código passo a passo;
-Utilize o console.log para exibir a nova descrição capturada e verificar se há casos em que o valor é null ou uma string vazia;
-Implemente uma verificação que previna a atualização da tarefa com uma descrição inválida (string vazia ou null);
-Teste a solução para garantir que a descrição da tarefa só é atualizada com valores válidos.
-3) Melhorando a usabilidade na edição de tarefas
-Agora é hora de melhorar a interface de usuário da aplicação de lista de tarefas. Notou-se que usuários frequentemente clicam em "Cancelar" ou fecham o prompt de edição sem inserir um novo valor, o que leva a confusão sobre o estado atual da tarefa. Seu objetivo é melhorar a experiência do usuário, assegurando que a tarefa não seja alterada nestes casos. Siga os passos:
-
-Implemente uma função que seja chamada ao clicar no botão de editar tarefa.
-Utilize, dentro dessa função, um prompt para solicitar a nova descrição da tarefa e armazená-la em uma variável;
-Verifique, antes de atualizar a descrição da tarefa, se o valor recebido é null (usuário clicou em "Cancelar") ou uma string vazia, e em caso afirmativo, faça com que nenhuma ação seja realizada;
-Atualize, caso um valor válido seja fornecido, a descrição da tarefa e informe ao usuário que a tarefa foi atualizada com sucesso.
-4) Debugando atualizações de tarefas com valores nulos
-Na sua aplicação de gerenciamento de tarefas, alguns usuários reportaram que, ao tentarem editar uma tarefa e cancelarem o prompt de edição, a descrição da tarefa desaparece, mostrando null ao invés de manter o texto original. Sua tarefa é identificar e corrigir esse bug, utilizando técnicas de debugging para garantir que, ao cancelar a edição, a descrição original da tarefa seja mantida. Siga os passos a seguir:
-
-Insira um ponto de parada (debugger) antes da solicitação do prompt para editar a tarefa;
-Use o console.log para verificar o valor obtido do prompt antes de qualquer operação de atualização;
-Crie uma condição para tratar especificamente o caso de cancelamento do prompt (null) e evitar a substituição da descrição da tarefa;
-Realize testes para confirmar que ao cancelar a edição, a descrição da tarefa permanece inalterada.
 Bom trabalho!
