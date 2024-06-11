@@ -1,0 +1,10 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Refatorando para async/await
+Imagine que você trabalha em um projeto de desenvolvimento web e sua liderança solicitou a otimização do carregamento de dados de uma API de vídeos educacionais. Atualmente, o código utiliza muitos .then() para tratar as promessas, tornando-o difícil de ler e consertar. Sua tarefa é refatorar o código que você desenvolveu no exercício da aula anterior chamado “Exibindo mensagens de erro personalizadas”, substituindo os .then() por async/await, visando a melhorar a legibilidade e a manutenção do código.
+
+2) Aplicando try/catch com finally
+Você percebeu que, além do tratamento de erros, seria interessante implementar uma lógica que sempre execute uma ação após as tentativas de carregar os vídeos, independentemente de haver sucesso ou falha na operação. Utilize o bloco finally para mostrar uma mensagem no console que confirme a tentativa de carregar os vídeos, demonstrando a aplicação do bloco finally em operações assíncronas.
