@@ -1,0 +1,46 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+O que é:
+Boas-vindas à nossa lista de exercícios , um caminho prático e envolvente para aprender e aprimorar suas habilidades em tecnologia. Aqui, você não encontrará longas leituras teóricas ou explicações abstratas. Em vez disso, nossos exercícios são projetados para colocar você no centro do processo de aprendizado, permitindo que você construa, experimente e explore conceitos tecnológicos de forma direta e aplicada.
+
+Para que serve:
+Esta lista é uma ferramenta dinâmica para aprender, reforçar e aprimorar habilidades práticas em programação e desenvolvimento web. Cada exercício é uma oportunidade de aplicar conhecimentos teóricos em cenários reais, preparando você não apenas para entender a tecnologia, mas para utilizá-la de maneira eficaz e criativa em seus próprios projetos ou no ambiente de trabalho.
+
+Como fazer:
+Leia cada exercício com atenção: comece entendendo o cenário proposto e o que se espera como resultado.
+Escreva o código: utilize o ambiente de codificação de sua escolha para escrever e testar o seu código. Não se preocupe em acertar de primeira, a prática leva à perfeição.
+Verifique o gabarito: após tentar resolver o exercício, compare seu código com o gabarito fornecido em “Opinião do instrutor”. Isso ajudará a identificar áreas de melhoria e consolidar o aprendizado.
+Repita: a repetição é chave para o aprendizado. Tente fazer os exercícios mais de uma vez, aplicando melhorias e variantes.
+Lembre-se, cada desafio é uma chance de crescer. Não se desanime com os erros; eles são degraus no caminho do aprendizado. E acima de tudo, divirta-se! O aprendizado mais eficaz acontece quando nos engajamos e nos interessamos pelo que estamos fazendo.
+
+Não se esqueça que estamos no Fórum e no Discord para te ajudar!
+
+Bons estudos!
+
+1) Integrando a API do AluraBooks
+Imagine que você trabalha em uma startup de tecnologia educacional focada em promover a leitura. Sua equipe deseja criar um portal chamado "EduLivros", que exibe uma lista de livros educacionais disponíveis. Você é responsável por integrar, ao site, a API que fornece os dados dos livros. Para começar, você precisa realizar uma requisição à API fornecida e exibir os resultados em um formato legível para a equipe de desenvolvimento.
+
+Neste exercício, usaremos a API AluraBooks.
+
+Siga as instruções a seguir:
+
+Crie uma pasta chamada “app” e dentro dela, um arquivo main.js;
+Crie, no arquivo main.js, uma variável de livros que será inicializada como um array vazio;
+Defina uma constante endpointDaApi com o URL fornecido para acessar os livros;
+Implemente uma função assíncrona getBuscaLivrosDaAPI que realiza uma requisição para o endpoint da API e atualiza a variável livros com os dados recebidos;
+Use console.table() para exibir os livros de forma organizada no console;
+Lembre-se de adicionar a tag <script> que referencia seu arquivo main.js no arquivo index.html do projeto.
+2) Exibindo livros dinamicamente com JavaScript
+Imagine que você está trabalhando em uma livraria virtual como desenvolvedor front-end. Sua tarefa é: melhore a experiência do usuário ao exibir os livros disponíveis. Você precisa criar uma página que mostre todos os livros disponíveis, utilizando JavaScript para inserir dinamicamente cada livro em uma section com id="livros". Cada livro deve ser representado por uma <div> que contém:
+
+a imagem do livro;
+o título;
+o autor;
+o preço; e
+a categoria. Os dados dos livros estão disponíveis em um array chamado listaDeLivros, no qual cada livro é um objeto com as seguintes propriedades: título, autor, imagem, preco e categoria.
+Dicas para realizar o exercício:
+Selecione a section na qual os livros serão inseridos utilizando o método getElementById;
+Use um loop forEach para iterar sobre o array listaDeLivros;
+Para cada livro no array, crie uma <div> que contém as informações do livro. Utilize template literals para inserir os valores das propriedades de cada livro (ex.: livro.titulo, livro.imagem, etc.);
+Insira cada <div> criada dentro da section de livros, utilizando innerHTML ou appendChild.

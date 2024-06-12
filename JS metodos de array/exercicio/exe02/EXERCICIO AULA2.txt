@@ -1,0 +1,34 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Consumindo dados de uma API fake no projeto VidFlow
+Você está desenvolvendo o front-end da aplicação VidFlow. Até agora, você trabalhou na estrutura e no estilo da aplicação; agora é hora de adicionar vídeos. Para simular uma situação real de consumo de dados de uma API, crie um arquivo json e insira os dados dos vídeos, ou utilize o mesmo arquivo json utilizado neste curso.
+
+Sua tarefa consiste em cumprir três ações:
+
+Configure o JSON Server;
+Crie um arquivo videos.json com dados fictícios de vídeos;
+Utilize a API desenvolvida neste curso, ou personalize de acordo com o seu projeto.
+Consuma esses dados na aplicação VidFlow. Os vídeos devem ser exibidos na página principal da aplicação, cada um com seu título, descrição e thumbnail.
+Para realizar essa tarefa, siga os seguintes passos:
+
+Instale o JSON Server globalmente em sua máquina utilizando o comando npm install -g json-server;
+Crie uma pasta chamada “backend” no seu projeto e, dentro dela, crie um arquivo videos.json. Preencha este arquivo com um array de objetos, onde cada objeto representa um vídeo. Cada vídeo deve ter um id, titulo, descrição, e thumbnail;
+Inicie o JSON Server utilizando o comando json-server --watch backend/videos.json para servir os dados dos vídeos;
+Acesse http://localhost:3000/videos no seu navegador para verificar se a API fake está funcionando corretamente e os dados estão sendo servidos;
+Modifique sua aplicação VidFlow para consumir os dados da API fake. Você pode utilizar fetch ou qualquer biblioteca HTTP de sua preferência para realizar as requisições;
+Exiba os vídeos na página principal da aplicação, mostrando o título, descrição, e thumbnail de cada um.
+2) Exibindo vídeos dinamicamente
+Imagine que você é responsável por atualizar a seção de vídeos de um website de tecnologia. Sua tarefa é integrar uma lista de vídeos educativos disponibilizados por uma API, exibindo-os de forma dinâmica na página. Você utilizará JavaScript para consumir a API e adicionar cada vídeo, junto com seus detalhes, dentro de uma lista ul com a classe videos__container no index.html.
+
+Siga as instruções para realizar a demanda:
+
+Acesse o arquivo index.html e adicione uma ul com a classe videos__container;
+No arquivo script.js, utilize fetch para consumir a API que retorna os dados dos vídeos;
+Para cada vídeo retornado pela API, crie dinamicamente elementos li contendo um iframe para o vídeo, uma imagem representando o canal (com alt text "Logo do Canal"), o título do vídeo, e a descrição do canal;
+Garanta que cada iframe inclua o atributo allowfullscreen (em português, permitir tela cheia) para permitir visualização em tela cheia;
+Use template strings para inserir dinamicamente os valores de URL do vídeo, título, imagem do canal, e descrição dentro do HTML.
+3) Exibindo mensagens de erro personalizadas
+Sua próxima tarefa é: garanta que, ao carregar a lista de vídeos a partir de uma API, os usuários sejam informados de maneira amigável caso ocorra algum erro durante o processo de carregamento. Utilize o método .catch() para capturar erros na chamada da API e exiba uma mensagem personalizada no lugar da lista de vídeos.
