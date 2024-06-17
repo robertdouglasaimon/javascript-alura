@@ -1,0 +1,13 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Consumindo dados da API com Fetch API
+Sua próxima tarefa é consumir os dados de uma API simulada com json-server, que hospeda uma coleção de vídeos. Para realizar isso, você precisa escrever um script JavaScript que faça uma requisição GET para a API, processe a resposta e exiba os dados de forma legível no console. Isso inclui criar uma função assíncrona que use a Fetch API para solicitar os dados de http://localhost:3000/videos (ou a porta que seu servidor estiver utilizando), converter a resposta para JSON e, finalmente, exibir esses dados no console. Esta atividade é uma introdução à manipulação de APIs e dados assíncronos em aplicações web.
+
+2) Integrando dados da API com a interface do usuário
+Você foi contratado por uma empresa de tecnologia educacional para desenvolver um portal de vídeos. O desafio é integrar a interface do usuário do portal com os dados provenientes de uma API simulada, de forma que cada vídeo listado na API seja exibido no portal. Assim, você precisará modificar o código existente para assegurar que, para cada item retornado pela API, seja criado e exibido um elemento correspondente na página. Este exercício prático envolve manipulação avançada do DOM, uso de funções assíncronas para requisições à API e a aplicação de conceitos de modularização no JavaScript.
+
+3) Adicionando novos vídeos ao AluraPlay via formulário
+Você assumiu a responsabilidade de aprimorar a plataforma de vídeos educacionais AluraPlay, adicionando a funcionalidade de permitir que os administradores da plataforma possam inserir novos vídeos através de um formulário, sem a necessidade de editar manualmente o arquivo db.json. Sua tarefa é desenvolver o front-end para essa funcionalidade, criando um formulário que capture as informações do vídeo (URL do embed, título, imagem de capa e número de visualizações) e, ao submeter, adicione essas informações à lista de vídeos exibidos na tela inicial.

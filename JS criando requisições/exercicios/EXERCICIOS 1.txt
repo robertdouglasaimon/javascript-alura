@@ -1,0 +1,25 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+O que é:
+Boas-vindas à nossa lista de exercícios , um caminho prático e envolvente para aprender e aprimorar suas habilidades em tecnologia. Aqui, você não encontrará longas leituras teóricas ou explicações abstratas. Em vez disso, nossos exercícios são projetados para colocar você no centro do processo de aprendizado, permitindo que você construa, experimente e explore conceitos tecnológicos de forma direta e aplicada.
+
+Para que serve:
+Esta lista é uma ferramenta dinâmica para aprender, reforçar e aprimorar habilidades práticas em programação e desenvolvimento web. Cada exercício é uma oportunidade de aplicar conhecimentos teóricos em cenários reais, preparando você não apenas para entender a tecnologia, mas para utilizá-la de maneira eficaz e criativa em seus próprios projetos ou no ambiente de trabalho.
+
+Como fazer:
+Leia cada exercício com atenção: comece entendendo o cenário proposto e o que se espera como resultado.
+Escreva o código: utilize o ambiente de codificação de sua escolha para escrever e testar o seu código. Não se preocupe em acertar de primeira, a prática leva à perfeição.
+Verifique o gabarito: após tentar resolver o exercício, compare seu código com o gabarito fornecido em “Opinião do instrutor”. Isso ajudará a identificar áreas de melhoria e consolidar o aprendizado.
+Repita: a repetição é chave para o aprendizado. Tente fazer os exercícios mais de uma vez, aplicando melhorias e variantes.
+Lembre-se, cada desafio é uma chance de crescer. Não se desanime com os erros; eles são degraus no caminho do aprendizado. E acima de tudo, divirta-se! O aprendizado mais eficaz acontece quando nos engajamos e nos interessamos pelo que estamos fazendo.
+
+Não se esqueça que estamos no Fórum e no Discord para te ajudar!
+
+Bons estudos!
+
+1) Criando um ambiente de desenvolvimento com Node.js
+Você recebeu a missão de desenvolver um aplicativo web inovador. Para iniciar, é crucial configurar um ambiente de desenvolvimento adequado. Sua primeira tarefa é instalar o Node.js em seu computador, uma tecnologia fundamental para o desenvolvimento do projeto. Além disso, você precisa verificar se a instalação foi bem-sucedida, executando um simples script que retorna a versão do Node.js instalada. Isso garantirá que tudo esteja pronto para a próxima fase, na qual você irá instalar outras ferramentas necessárias, como o json-server, para construir uma API de teste.
+
+2) Iniciando um servidor local com json-server
+Imagine que você está no meio de um hackathon com sua equipe, e o desafio é criar uma aplicação que apresente conteúdo de vídeo de forma dinâmica e interativa. Para prototipar rapidamente, você decide utilizar o json-server para simular uma API com dados de vídeos. Seu objetivo é configurar um servidor local que sirva os dados de um arquivo db.json, que já contém informações estruturais como títulos de vídeos, descrições, quantidades de visualizações, URLs dos vídeos, e imagens dos publicadores. A tarefa envolve inicializar um projeto Node.js, instalar o json-server, e superar um erro comum de execução de scripts no Windows. Após configurar o servidor local, você deverá testá-lo acessando os dados na rota especificada.
