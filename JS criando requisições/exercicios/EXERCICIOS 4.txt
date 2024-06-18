@@ -1,0 +1,11 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+1) Implementando busca dinâmica em seu site
+Seu próximo desafio é implementar uma funcionalidade essencial na AluraPlay que melhora a experiência do usuário: uma ferramenta de busca dinâmica. Essa ferramenta permitirá aos usuários encontrar facilmente vídeos específicos em uma vasta coleção. Seu objetivo é criar uma função de busca que recebe um termo de pesquisa e retorna vídeos relacionados a esse termo, utilizando uma API local para simular o comportamento de busca real. Sua tarefa inclui também integrar essa função de busca ao campo de pesquisa existente na página, de modo que os resultados sejam exibidos na interface do usuário quando um termo é buscado.
+
+2) Criando visualizações dinâmicas com resultados de busca
+Depois de implementar a busca dinâmica no seu projeto de site de compartilhamento de vídeos, você percebe a necessidade de melhorar a experiência do usuário ao visualizar os resultados. Sua nova tarefa é desenvolver uma maneira de exibir os vídeos encontrados na busca diretamente na página, sem a necessidade de olhar o console do navegador. Isso envolve capturar o evento de clique no botão de busca, obter o valor do campo de pesquisa, realizar a busca e, finalmente, apresentar os vídeos correspondentes de forma dinâmica na página, substituindo ou complementando o conteúdo já exibido.
+
+3) Aperfeiçoando a exibição de resultados de busca
+Atualmente, ao realizar uma busca, os vídeos correspondentes são adicionados à lista de vídeos existentes, em vez de substituir os vídeos anteriores. Isso pode confundir os usuários, que esperam ver apenas os vídeos relacionados ao termo pesquisado. Sua missão é ajustar o código para que, ao realizar uma busca, a lista de vídeos seja limpa antes de exibir os novos resultados. Assim, os usuários terão uma experiência mais clara e direcionada ao buscar conteúdo no site.

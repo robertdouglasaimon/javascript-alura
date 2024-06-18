@@ -1,0 +1,18 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Implementando a adição de vídeos através de um formulário
+Você foi encarregado de desenvolver uma funcionalidade para a plataforma AluraPlay: permitir que os usuários adicionem novos vídeos à plataforma através de um formulário. Esta funcionalidade deve coletar informações sobre o novo vídeo, como título, descrição, URL do embed e imagem de capa, e enviar esses dados para serem salvos na API simulada por meio de uma requisição POST.
+
+2) Integrando um formulário com uma API
+Continuando a tarefa de inserção de vídeos, agora, o objetivo é simplificar o processo de submissão de conteúdo, integrando o formulário a uma API que armazena as informações dos vídeos em um banco de dados. Para fazer isso, você precisa implementar um formulário HTML com campos para URL do vídeo, título, e imagem de capa, além de configurar uma requisição POST para enviar esses dados para a API. Ao concluir o envio, o usuário deve ser redirecionado para uma página de confirmação.
+
+Dicas para realizar o exercício:
+Crie um arquivo HTML chamado enviarVideo.html com um formulário que contenha os seguintes campos: URL do vídeo, título, e imagem de capa. Utilize data-attributes para identificar cada campo: data-url, data-titulo, e data-imagem;
+No mesmo arquivo, adicione um botão de envio para o formulário;
+Crie um arquivo JavaScript criarVideo.js e faça a importação desse arquivo no seu HTML;
+No criarVideo.js, implemente a função criarVideo() que será acionada ao submeter o formulário. Essa função deve capturar os valores dos campos do formulário, gerar uma descrição aleatória para o número de visualizações e enviar esses dados para a API utilizando uma requisição POST;
+A função também deve redirecionar o usuário para uma página envio-concluido.html após a submissão ser bem-sucedida;
+Garanta que a função criarVideo() impeça o recarregamento padrão da página ao submeter o formulário, utilizando event.preventDefault().
