@@ -1,6 +1,6 @@
 # ![JavaScript: criando requisições](https://img.shields.io/badge/JavaScript-criando%20requisições-blue)
 
-<p align="center"> <img src="https://github.com/MonicaHillman/aluraplay-requisicoes/blob/main/img/logo.png" alt="Logo da Alura"> </p>
+<p align="center"> <img src="desafio final/img/J3hD21O.png" alt="Logo da Alura"> </p>
 
 ## Sobre o Curso
 
