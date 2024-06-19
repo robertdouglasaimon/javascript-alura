@@ -1,0 +1,26 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Implementando mensagens de erro na listagem de vídeos
+Você implementou com sucesso a exibição dos vídeos na página, mas percebeu que, para melhorar a experiência do usuário, seria útil adicionar mensagens de erro quando a lista não puder ser carregada por algum motivo. Sua tarefa é implementar mensagens de erro personalizadas na função de listagem de vídeos. Utilize JavaScript e considere que você já tem uma função mostrarVideos() que busca os vídeos de uma API e os lista na página. Siga estes passos:
+
+Adicione uma estrutura de tratamento de erros try...catch à função mostrarVideos();
+No bloco try, inclua o código que busca e lista os vídeos;
+No bloco catch, capture qualquer erro que possa ocorrer durante a busca ou listagem dos vídeos;
+Dentro do bloco catch, atualize o conteúdo de um elemento HTML específico (por exemplo, um elemento com a classe .mensagem_erro) para exibir uma mensagem de erro, como "Não foi possível carregar a lista de vídeos";
+Teste sua implementação alterando temporariamente a URL da API para garantir que a mensagem de erro seja exibida corretamente quando a busca falhar;
+Considere também adicionar estilos CSS para a mensagem de erro, para garantir que ela seja claramente visível e se destaque na interface do usuário.
+2) Manipulando erros na inserção de vídeos com JavaScript
+Sua próxima tarefa é garantir que a inserção de novos vídeos funcione sem falhas. Para fazer isso, crie uma função adicionarVideo que envia os dados de um novo vídeo para o servidor usando fetch. A função deve enviar um objeto com as propriedades titulo, url e imagem para uma API. Se a conexão for bem-sucedida e a resposta do servidor for positiva, o vídeo será considerado inserido. Caso contrário, o usuário deve ser informado sobre o erro.
+
+Para simular o envio dos dados, você usará uma URL de exemplo. Use tratamento de erros com try e catch para capturar falhas na requisição, e se um erro ocorrer, mostre uma mensagem de alerta informando que não foi possível enviar o vídeo.
+
+Siga estes passos para implementar a função:
+
+Use fetch para enviar uma requisição POST com os dados do vídeo;
+Verifique se a resposta da API é bem-sucedida;
+Caso haja um erro, lance uma exceção com uma mensagem adequada;
+Use try e catch para capturar a exceção e exibir a mensagem de erro em um alerta.
+Certifique-se de testar seu código com uma URL válida e uma inválida para ver ambos os comportamentos: sucesso e falha na inserção do vídeo.
