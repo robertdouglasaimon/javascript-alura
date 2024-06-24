@@ -1,0 +1,35 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+O que é:
+Boas-vindas à nossa lista de exercícios , um caminho prático e envolvente para aprender e aprimorar suas habilidades em tecnologia. Aqui, você não encontrará longas leituras teóricas ou explicações abstratas. Em vez disso, nossos exercícios são projetados para colocar você no centro do processo de aprendizado, permitindo que você construa, experimente e explore conceitos tecnológicos de forma direta e aplicada.
+
+Para que serve:
+Esta lista é uma ferramenta dinâmica para aprender, reforçar e aprimorar habilidades práticas em programação e desenvolvimento web. Cada exercício é uma oportunidade de aplicar conhecimentos teóricos em cenários reais, preparando você não apenas para entender a tecnologia, mas para utilizá-la de maneira eficaz e criativa em seus próprios projetos ou no ambiente de trabalho.
+
+Como fazer:
+Leia cada exercício com atenção: comece entendendo o cenário proposto e o que se espera como resultado.
+Escreva o código: utilize o ambiente de codificação de sua escolha para escrever e testar o seu código. Não se preocupe em acertar de primeira, a prática leva à perfeição.
+Verifique o gabarito: após tentar resolver o exercício, compare seu código com o gabarito fornecido em “Opinião do instrutor”. Isso ajudará a identificar áreas de melhoria e consolidar o aprendizado.
+Repita: a repetição é chave para o aprendizado. Tente fazer os exercícios mais de uma vez, aplicando melhorias e variantes.
+Lembre-se, cada desafio é uma chance de crescer. Não se desanime com os erros; eles são degraus no caminho do aprendizado. E acima de tudo, divirta-se! O aprendizado mais eficaz acontece quando nos engajamos e nos interessamos pelo que estamos fazendo.
+
+Não se esqueça que estamos no Fórum e no Discord para te ajudar!
+
+Bons estudos!
+
+1) Validando formulários com HTML5
+Imagine que você foi contratado para desenvolver uma página de cadastro para um novo serviço de streaming. A ideia é criar um formulário simples e intuitivo que valide as informações do usuário antes de serem enviadas ao servidor, garantindo que todos os dados sejam coletados corretamente. Seu desafio é utilizar HTML5 para criar esse formulário, implementando validações para os campos de nome, e-mail, CPF, data de nascimento e concordância com os termos de serviço, semelhante ao que foi descrito para o Monibank. Adicione também um campo para senha, exigindo caracteres especiais, números e letras maiúsculas e minúsculas, aumentando a segurança do usuário.
+
+2) Aprimorando o formulário de cadastro
+Você está desenvolvendo o site do MoniBank, uma inovadora agência bancária virtual, e precisa implementar um formulário de cadastro para novos usuários. Utilize os conceitos de minLength, maxLength, e tipos de input específicos para cada campo, garantindo que os dados inseridos pelos usuários atendam aos requisitos de segurança e validação do banco. Os campos do formulário devem ser preenchidos na seguinte ordem:
+
+Nome;
+E-mail;
+CPF;
+Senha;
+Data de nascimento;
+Aceite dos termos e condições e um botão para enviar o formulário.
+3) Implementando validações essenciais em um formulário de cadastro
+Para garantir que todas as inscrições sejam preenchidas de maneira completa e correta, você precisa implementar, no formulário de cadastro, a exigência do preenchimento de todos os campos antes da submissão. Utilize o atributo required para assegurar que campos como nome, e-mail, identificação (podendo ser comparado ao RG), data de nascimento, e concordância com os termos e condições sejam obrigatoriamente preenchidos. Adicionalmente, inclua um botão de envio que só permita a conclusão do cadastro com todos os campos devidamente preenchidos.
+
