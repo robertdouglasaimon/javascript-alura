@@ -1,0 +1,11 @@
+
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Implementando a validação de dígitos verificadores do CPF
+A sua equipe decidiu aprimorar o processo de validação do CPF inserido pelos usuários, adicionando uma camada extra de verificação que inclui os dígitos verificadores. Sua tarefa envolve aprimorar o script de validação de CPF, incorporando a lógica para validar tanto o primeiro quanto o segundo dígito verificador - de acordo com os critérios da Receita Federal do Brasil. Este desafio requer habilidades em JavaScript, atenção aos detalhes e compreensão dos algoritmos de validação de CPF.
+
+2) Validando a maioridade no cadastro
+Você está contribuindo para o desenvolvimento de um sistema de cadastro online, num banco digital. Uma das exigências do sistema é que novos clientes sejam maiores de 18 anos. Sua tarefa é implementar uma função de validação de idade que verifique, a partir da data de nascimento fornecida pelo usuário, se ele é maior de idade.

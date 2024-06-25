@@ -1,0 +1,12 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Validando CPF com Expressão Regular
+Uma das funcionalidades do portal é o cadastro de usuários, no qual o CPF é um dos campos mais importantes para confirmar a identidade dos clientes. Seu desafio é criar um campo de formulário para a entrada do CPF que valide o formato deste documento (com e sem pontuação), utilizando uma expressão regular (Regex) para essa validação. Esse campo deve aceitar CPFs formatados (ex.: 000.000.000-00) e não formatados (ex.: 00000000000), garantindo flexibilidade no preenchimento sem comprometer a precisão da informação.
+
+2) Verificando a validade do CPF
+Sua próxima tarefa é criar um script JavaScript que valide o CPF inserido no campo de formulário correspondente. O script deve verificar se o CPF é válido, seguindo os padrões brasileiros, incluindo a verificação de dígitos verificadores e a não aceitação de sequências numéricas repetitivas.
+
+DISCUTIR NO FÓRUM
