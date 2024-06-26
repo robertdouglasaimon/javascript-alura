@@ -1,0 +1,14 @@
+
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Definindo mensagens de erros
+Sua nova tarefa é implementar as mensagens de erros que serão exibidas ao usuário. As mensagens de erro serão dos tipos: 'valueMissing', 'typeMismatch', 'patternMismatch', 'tooShort' e 'customError'. Personalize os tipos de erros que serão utilizados para cada um dos campos criados até o momento: nome, email, rg, cpf, aniversario e termos. Guarde essa estrutura em um array de objetos, que será utilizado no decorrer dos próximos exercícios.
+
+2) Personalizando feedback de erros no formulário de cadastro
+Você recebeu a tarefa de aprimorar a experiência do usuário no processo de cadastro do sistema. A tarefa é garantir que os usuários recebam feedbacks claros e úteis quando ocorrerem erros de preenchimento nos campos do formulário. Para fazer isso, você utilizará o JavaScript para personalizar as mensagens de erro de acordo com o tipo de validação que falhou, melhorando a interação do usuário com o formulário. Utilize as mensagens de erros desenvolvidas no último exercício e fique livre para personalizá-las como quiser.
+
+3) Salvando dados do formulário com localstorage
+Você está desenvolvendo a funcionalidade de cadastro para um sistema de banco digital. Após garantir que os usuários preencham os campos do formulário corretamente, agora você precisa implementar uma solução para salvar esses dados de maneira segura e eficiente, permitindo que sejam acessados posteriormente ou em outra etapa do processo de cadastro, como a verificação de identidade. Para fazer isso, você utilizará o LocalStorage, uma ferramenta poderosa que permite armazenar dados no navegador do usuário.
