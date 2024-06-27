@@ -1,0 +1,13 @@
+Lista de exercícios
+PRÓXIMA ATIVIDADE
+
+Vamos praticar o que aprendemos até aqui?
+
+1) Integrando a câmera para captura de foto no cadastro
+Você está desenvolvendo a funcionalidade de reconhecimento facial para o processo de cadastro do Monibank. A etapa atual requer que os usuários possam tirar uma fotografia de si mesmos usando a câmera do dispositivo. Este passo é crucial para o processo de verificação de identidade e segurança do usuário. Para isso, você implementará o acesso à câmera do dispositivo e permitirá que o usuário capture uma foto diretamente no formulário de cadastro.
+
+2) Implementando a captura de foto no processo de cadastro
+Você está desenvolvendo a segunda etapa do processo de cadastro do projeto, focada na captura de uma fotografia do usuário para fins de reconhecimento facial. Após configurar o acesso à câmera do dispositivo, o próximo passo é permitir que o usuário capture uma foto de si mesmo. Esta foto será utilizada para verificar a identidade do usuário como parte do processo de segurança e verificação do cadastro.
+
+3) Finalizando o cadastro com foto no monibank
+Você está na fase final do desenvolvimento de um sistema de cadastro. A tarefa agora é integrar a foto capturada na etapa anterior do cadastro com os dados já coletados do usuário, salvando tudo de forma coesa no localStorage. Este passo é crucial para completar o processo de cadastro, permitindo que o usuário prossiga para a verificação final e uso da conta.
